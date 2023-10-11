@@ -1,1 +1,95 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Custom Navbar */
+/* Nav Lg */
+/* Media query untuk breakpoint Desktop*/
+@media (min-width: 768px) {
+    .nav-lg {
+        /* background: rgba(35, 35, 35, 1); */
+        color: white;
+        margin-top: 25px;
+        border-radius: 10px;
+        height: 60px;
+    }
+
+    .nav-lg .nav-logo {
+        font-family: 'Lily Script One';
+        font-size: 30px;
+        font-weight: 400;
+        color: white;
+        margin-top: -17px;
+    }
+
+    .nav-lg .nav-list {
+        margin-top: 3px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .nav-lg .nav-list a:hover {
+        color: #FFEDA3;
+    }
+
+    /* Menyembunyikan navbar tablet pada breakpoint Desktop */
+    .nav-sm {
+        display: none;
+    }
+
+    #carouselExampleCaptions .carousel-inner .carousel-item img {
+        height: 630px;
+    }
+}
+
+/* Nav sm */
+/* Media query untuk breakpoint tablet*/
+@media (max-width: 768px) {
+
+    /* Menyembunyikan navbar utama pada breakpoint tablet dan handphone*/
+    .nav-lg {
+        display: none;
+    }
+
+    /* Memunculkan navbar khusus untuk breakpoint tablet dan handphone */
+    .nav-sm {
+        display: block;
+    }
+
+    .nav-sm {
+        /* background: rgba(35, 35, 35, 0.4); */
+        background: white;
+        /* background: linear-gradient(to bottom right, rgba(255, 237, 163, 1) 1%, white); */
+        color: white;
+    }
+
+    .nav-sm .nav-logo {
+        font-family: 'Lily Script One';
+        font-size: 24px;
+        font-weight: 400;
+        color: #000;
+    }
+
+    .nav-sm .nav-list {
+        margin-top: 25px;
+    }
+
+    .nav-sm .nav-list a {
+        width: 100%;
+        color: black;
+        background: #EEEEEE;
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 16px;
+    }
+
+    #carouselExampleIndicators .carousel-inner .carousel-item img {
+        height: 300px;
+    }
+    #carouselExampleIndicators {
+        margin-top: 70px;
+    }
+}
+
+/* Carousel */

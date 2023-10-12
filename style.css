@@ -5,15 +5,68 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Custom title text */
+/* mini tumbnail */
+.mini-tumbnail {
+    padding: 5px 20px;
+    display: inline-block;
+    border-radius: 6px;
+    background: rgba(255, 237, 163, 0.30);
+    color: #FFEDA3;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.27);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.44px;
+}
+
+.title {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 2.4px;
+}
+
+.text {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    /* 166.667% */
+    letter-spacing: 0.96px;
+}
+
+.button {
+    padding: 10px 50px;
+    border-radius: 13px;
+    background: #39A9CB;
+    box-shadow: 2px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.44px;
+}
+
+.button:hover{
+    background: #FFEDA3;
+    color: #232323;
+}
+
 /* Custom Navbar */
 /* Nav Lg */
 /* Media query untuk breakpoint Desktop*/
 @media (min-width: 768px) {
     .nav-lg {
-        background: rgba(35, 35, 35, 0.4);
+        background: rgba(35, 35, 35, 0.3);
         transition: background-color 0.3s;
         color: white;
-        margin-top: 25px;
+        margin-top: 10px;
         border-radius: 10px;
         height: 60px;
     }
@@ -101,3 +154,5 @@ body {
 #carousel-sm {
     margin-top: 80px;
 }
+
+/* Content 1 */

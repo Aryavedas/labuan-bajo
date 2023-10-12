@@ -1,4 +1,7 @@
+html,
 body {
+    overflow-x: hidden;
+    /* position: relative; */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -7,7 +10,8 @@ body {
 /* Media query untuk breakpoint Desktop*/
 @media (min-width: 768px) {
     .nav-lg {
-        /* background: rgba(35, 35, 35, 1); */
+        background: rgba(35, 35, 35, 0.4);
+        transition: background-color 0.3s;
         color: white;
         margin-top: 25px;
         border-radius: 10px;
@@ -57,10 +61,10 @@ body {
     }
 
     .nav-sm {
-        /* background: rgba(35, 35, 35, 0.4); */
         background: white;
-        /* background: linear-gradient(to bottom right, rgba(255, 237, 163, 1) 1%, white); */
+        transition: background-color 0.3s;
         color: white;
+        transition: background-color 0.3s;
     }
 
     .nav-sm .nav-logo {
@@ -87,9 +91,13 @@ body {
     #carouselExampleIndicators .carousel-inner .carousel-item img {
         height: 300px;
     }
+
     #carouselExampleIndicators {
         margin-top: 70px;
     }
 }
 
 /* Carousel */
+#carousel-sm {
+    margin-top: 80px;
+}

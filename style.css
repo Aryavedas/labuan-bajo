@@ -5,6 +5,12 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+::selection {
+    background-color: #FFEDA3; /* Warna latar belakang saat dipilih */
+    color: #232323; /* Warna teks saat dipilih */
+}
+
+
 /* Custom title text */
 /* mini tumbnail */
 .mini-tumbnail {
@@ -41,6 +47,7 @@ body {
 }
 
 .button {
+    width: 40%;
     padding: 10px 50px;
     border-radius: 13px;
     background: #39A9CB;
@@ -53,13 +60,11 @@ body {
     letter-spacing: 1.44px;
 }
 
-.button:hover{
+.button:hover {
     background: #FFEDA3;
     color: #232323;
 }
 
-/* Custom Navbar */
-/* Nav Lg */
 /* Media query untuk breakpoint Desktop*/
 @media (min-width: 768px) {
     .nav-lg {
@@ -99,8 +104,7 @@ body {
     }
 }
 
-/* Nav sm */
-/* Media query untuk breakpoint tablet*/
+/* Media query untuk breakpoint tablet dan handphone*/
 @media (max-width: 768px) {
 
     /* Menyembunyikan navbar utama pada breakpoint tablet dan handphone*/
@@ -148,6 +152,54 @@ body {
     #carouselExampleIndicators {
         margin-top: 70px;
     }
+
+    .mini-tumbnail {
+        color: #FFEDA3;
+        text-align: center;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.27);
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.84px;
+        display: flex;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        /* Tambahkan margin jika diperlukan */
+        margin: 0 auto;
+    }
+
+
+    .title {
+        color: #000;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.96px;
+        margin-top: 7px;
+    }
+
+    .text {
+        color: #000;
+        margin-top: 16px;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+    }
+
+    .button:hover {
+        background: #FFEDA3;
+        color: #232323;
+    }
 }
 
 /* Carousel */
@@ -156,3 +208,24 @@ body {
 }
 
 /* Content 1 */
+
+/* Content 2 */
+#content2 {
+    background-color: rgba(57, 169, 203, 0.07);
+}
+
+.title-2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.text-2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+}

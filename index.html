@@ -15,126 +15,164 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <link rel="icon" href="src/favicon.ico" type="image/png">
     <title>Labuan Bajo</title>
 </head>
 
 <body>
-    <!-- Nav sm -->
-    <div id="nav-sm" class="container-fluid fixed-top nav-sm py-3 fixed-top bg-transparent z-3 overflow-hidden">
-        <!-- Nav Logo -->
-        <div class="d-flex justify-content-between align-items-center mx-sm-5 mx-3">
-            <a href="#" class="text-decoration-none nav-logo">Labuan Bajo</a>
-            <!-- Humberger menu -->
-            <svg id="nav-hamburger-sm" xmlns="http://www.w3.org/2000/svg" height="1.5em"
-                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                <style>
-                    svg {
-                        fill: #000
-                    }
-                </style>
-                <path
-                    d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-            </svg>
-        </div>
-        <!-- Nav List -->
-        <div id="nav-list-sm" class="mx-sm-4 d-none">
-            <ul class="list-unstyled nav-list text-center mx-3">
-                <li>
-                    <a href="#" class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3">
-                        <span>
-                            Beranda
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <path
-                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3">
-                        <span>
-                            Tentang
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <path
-                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3">
-                        <span>
-                            Adventure
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <path
-                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3">
-                        <span>
-                            Destinasi
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <path
-                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                        </svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3">
-                        <span>
-                            Profile
-                        </span>
-                        <svg xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <path
-                                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <!-- navbar -->
+    <nav>
+        <!-- Nav sm -->
+        <div id="nav-sm"
+            class="container-fluid fixed-top nav-sm py-3 fixed-top bg-transparent custom-shadow z-1 overflow-hidden">
+            <!-- Nav Logo -->
+            <div class="d-flex justify-content-between align-items-center mx-sm-5 mx-3">
+                <a href="#" class="text-decoration-none nav-logo d-flex align-items-start">
+                    <img src="src/Logo.png" alt="" width="28" height="28" style="margin-top: 2px; margin-right: 8px;">
+                    <section>Labuan Bajo</section>
+                </a>
+                <!-- Humberger menu -->
 
-    <!-- Nav lg -->
-    <div class="container-fluid fixed-top z-3">
-        <div id="nav-lg" class="container nav-lg bg-transparent">
-            <div class="d-flex col-12 justify-content-around align-items-center">
-                <!-- Nav Logo -->
-                <a href="#" class="text-decoration-none nav-logo">Labuan Bajo</a>
-                <!-- Nav List -->
-                <div class="">
-                    <ul class="list-unstyled nav-list">
-                        <li class="d-inline-block">
-                            <a href="#" class="nav-link px-4 py-3">Beranda</a>
-                        </li>
-                        <li class="d-inline-block">
-                            <a href="#" class="nav-link px-4 py-3">Tentang</a>
-                        </li>
-                        <li class="d-inline-block">
-                            <a href="#" class="nav-link px-4 py-3">Adventure</a>
-                        </li>
-                        <li class="d-inline-block">
-                            <a href="#" class="nav-link px-4 py-3">Destinasi</a>
-                        </li>
-                        <li class="d-inline-block">
-                            <a href="#" class="nav-link px-4 py-3">Profile</a>
-                        </li>
-                    </ul>
+                <svg id="nav-hamburger-sm" width="2.3em" height="2.3em" viewBox="-2.88 -2.88 29.76 29.76" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" stroke="#fff" stroke-width="0.9600000000000002"
+                    transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"
+                        transform="translate(0.35999999999999943,0.35999999999999943), scale(0.97)">
+                        <rect x="-2.88" y="-2.88" width="29.76" height="29.76" rx="6.8448" fill="#2940D3"
+                            strokewidth="0"></rect>
+                    </g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                        stroke-width="0.288"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.75 7C20.75 7.41421 20.4142 7.75 20 7.75L4 7.75C3.58579 7.75 3.25 7.41421 3.25 7C3.25 6.58579 3.58579 6.25 4 6.25L20 6.25C20.4142 6.25 20.75 6.58579 20.75 7Z"
+                            fill="#fff"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.75 12C20.75 12.4142 20.4142 12.75 20 12.75L4 12.75C3.58579 12.75 3.25 12.4142 3.25 12C3.25 11.5858 3.58579 11.25 4 11.25L20 11.25C20.4142 11.25 20.75 11.5858 20.75 12Z"
+                            fill="#fff"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M20.75 17C20.75 17.4142 20.4142 17.75 20 17.75L4 17.75C3.58579 17.75 3.25 17.4142 3.25 17C3.25 16.5858 3.58579 16.25 4 16.25L20 16.25C20.4142 16.25 20.75 16.5858 20.75 17Z"
+                            fill="#fff"></path>
+                    </g>
+                </svg>
+
+            </div>
+            <!-- Nav List -->
+            <div id="nav-list-sm" class="mx-sm-4 d-none">
+                <ul class="list-unstyled nav-list text-center mx-3">
+                    <li>
+                        <a href="#carousel-sm"
+                            class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3 mt-3">
+                            <span>
+                                Beranda
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160"
+                                    fill="#000" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tentang-labuan-bajo"
+                            class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3 mt-3">
+                            <span>
+                                Tentang
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160"
+                                    fill="#000" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#adventure-title"
+                            class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3 mt-3">
+                            <span>
+                                Adventure
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160"
+                                    fill="#000" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#destinasi"
+                            class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3 mt-3">
+                            <span>
+                                Destinasi
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160"
+                                    fill="#000" />
+                            </svg>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#profile"
+                            class="nav-link px-4 py-3 d-flex align-items-center justify-content-between px-3 mt-3">
+                            <span>
+                                Profile
+                            </span>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160"
+                                    fill="#000" />
+                            </svg>
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Nav lg -->
+        <div id="hide-nav" class="fixed-top z-1">
+            <div id="nav-lg" class="container-fluid nav-lg bg-transparent">
+                <div class="container d-flex col-12 justify-content-between align-items-center">
+                    <!-- Nav Logo -->
+                    <a href="#carouselExampleCaptions" id="nav-logo-lg"
+                        class="text-decoration-none nav-logo text-white d-flex align-items-start">
+                        <img src="src/Logo.png" alt="" width="28" height="28"
+                            style="margin-top: 6px; margin-right: 8px;">
+                        <section>Labuan Bajo</section>
+                    </a>
+
+                    <!-- Nav List -->
+                    <div class="">
+                        <ul id="nav-list-lg" class="list-unstyled nav-list text-white">
+                            <li class="d-inline-block">
+                                <a href="#carouselExampleCaptions" class="nav-link px-4 py-3">Beranda</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="#tentang-labuan-bajo" class="nav-link px-4 py-3">Tentang</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="#adventure-title" class="nav-link px-4 py-3">Adventure</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="#destinasi" class="nav-link px-4 py-3">Destinasi</a>
+                            </li>
+                            <li class="d-inline-block">
+                                <a href="#profile" class="nav-link px-4 py-3">Profile</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- carousel lg -->
-    <div id="carouselExampleCaptions" class="carousel slide mt-lg-0 d-none d-lg-block" data-bs-ride="carousel"
+    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel"
         data-bs-interval="2400">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -151,22 +189,24 @@
             <div class="carousel-item active">
                 <img src="src/Rectangle 1.jpg" class="d-block w-100 overlay-div" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Labuan Bajo</h5>
+                    <p>Tempat Alam Dan Keajaiban Bersatu</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="src/Rectangle 2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Surga Tersembunyi di Timur Indonesia</h5>
+                    <p>Destinasi ini merupakan gerbang menuju Taman Nasional Komodo yang menyimpan keindahan alam yang
+                        menakjubkan</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="src/Rectangle 3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Petualangan Seru di Labuan Bajo</h5>
+                    <p>anda bisa mengunjungi pulau-pulau yang indah, dan bisa juga menyelam untuk melihat keindahan
+                        bawah laut Labuan Bajo yang istimewa.</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -190,122 +230,424 @@
     </div>
 
     <!-- Carousel sm -->
-    <div id="carousel-sm" class="container-fluid z-3 d-lg-none mb-5">
+    <div id="carousel-sm" class="container-fluid z-2 d-lg-none mb-5">
         <div class="container">
             <img src="src/Group 9240.png" alt="" class="img-fluid header-img-sm p-1">
         </div>
     </div>
 
-    <!-- Accent color -->
-    <div class="container-fluid position-relative">
-        <img src="src/Ellipse 1.png" alt="" class="position-absolute"
-            style="margin-top: -550px; z-index: -99; margin-left: -250px;">
-    </div>
-    <div class="container-fluid position-relative">
-        <img src="src/Ellipse 5.png" alt="" class="position-absolute"
-            style="margin-top: -360px; z-index: -99; margin-left: -200px;">
-    </div>
-    <div class="container position-relative">
-        <img src="src/Ellipse 5 (1).png" alt="" class="position-absolute"
-            style="margin-top: -360px; z-index: -99; margin-left: 200px;">
-    </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Content 1 Tentang Labuan Bajo -->
+        <div id="tentang-labuan-bajo" class="container-fluid mx-auto row position-relative" style="margin-top: 100px;">
 
-    <!-- Content 1 Tentang Labuan Bajo -->
-    <div class="container-fluid row mt-5 mx-4 position-relative mx-auto mx-lg-0">
-        <!-- Accent color -->
-        <img src="src/Ellipse 1 sm.png" alt="" class="position-absolute d-none d-lg-block"
-            style="margin-top: 140px; z-index: -99; margin-left: -60px; width: 500px;">
-        <img src="src/Ellipse 1 sm.png" alt="" class="position-absolute d-block d-lg-none"
-            style="margin-top: 90px; z-index: -99; margin-left: -250px; width: 500px;">
-        <img src="src/Ellipse 2.png" alt="" class="position-absolute"
-            style="margin-top: -120px; z-index: -99; margin-left: 180px; width: 500px;">
-        <img src="src/Ellipse 5.png" alt="" class="position-absolute d-none d-lg-block"
-            style="margin-top: -30px; z-index: -99; margin-left: 1100px; width: 500px;">
+            <!-- Accent color -->
+            <img src="src/Ellipse 1 sm.png" alt="" class="position-absolute d-none d-lg-block"
+                style="margin-top: 140px; z-index: -99; margin-left: -60px; width: 500px;">
+            <img src="src/Ellipse 2.png" alt="" class="position-absolute d-block d-lg-none"
+                style="margin-top: 0px; z-index: -99; margin-left: -300px; width: 500px;">
 
-        <!-- img lg -->
-        <div class="col-5 container d-none d-lg-block">
-            <div class="container position-relative">
-                <img src="src/Rectangle 5.png" alt="" class="position-absolute">
-                <img src="src/Rectangle 4.png" alt="" class="position-absolute"
-                    style="margin-left: 70px; margin-top: 50px;">
-            </div>
-        </div>
+            <img src="src/Ellipse 1 sm.png" alt="" class="position-absolute d-block d-lg-none"
+                style="margin-top: -200px; z-index: -99; margin-left: -250px; width: 500px;">
+            <img src="src/Ellipse 5.png" alt="" class="position-absolute d-none d-lg-block"
+                style="margin-top: -30px; z-index: -99; margin-left: 1100px; width: 500px;">
+            <img src="src/Ellipse 5.png" alt="" class="position-absolute d-none d-lg-block"
+                style="margin-top: -160px; z-index: -99; margin-left: 200px; width: 500px;">
 
-        <!-- Paragraph -->
-        <div class="col-12 col-lg-6 container">
-            <h2 class="mini-tumbnail">Tentang Labuan Bajo</h2>
-            <h1 class="title">Labuan Bajo, Sepetak Surga yang Terletak di Indonesia Timur</h1>
-            <p class="text">Labuan Bajo merupakan sebuah surga tersembunyi yang ada di Indonesia bagian timur. Desa ini
-                terletak di
-                Kecamatan Komodo, Kabupaten Manggarai Barat, Provinsi Nusa Tenggara Timur</p>
-            <div class="btn button mt-4 d-none d-lg-block">Adventure</div>
-        </div>
-
-        <!-- img sm -->
-        <img src="src/Group 15.png" alt="" class="container-fluid d-block d-lg-none">
-    </div>
-
-    <!-- content 2 Adventure Labuan Bajo -->
-    <div id="content2" class="container-fluid py-5" style="margin-top: 150px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-
-                    <h2 class="mini-tumbnail">Adventure</h2>
-                    <h1 class="title">Temukan Petualangan Yang Seru</h1>
-                    <h3 class="text">keindahan alam menawarkan pengalaman tak terlupakan bagi para penjelajah. </h3>
-
-                    <div class="row d-flex align-items-center mt-4">
-                        <div class="col-2">
-                            <img src="src/Rectangle 16.png" alt="" width="55">
-                        </div>
-                        <div class="col-10 mt-3">
-                            <h1 class="title-2">Petualangan Menyeberang dengan Kapal</h1>
-                            <p class="text-2">Kamu dapat menjelajahi pulau-pulau terpencil</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center mt-2">
-                        <div class="col-2">
-                            <img src="src/Rectangle 19.png" alt="" width="55">
-                        </div>
-                        <div class="col-10 mt-3">
-                            <h1 class="title-2">Mengarungi Gelombang Laut</h1>
-                            <p class="text-2">Ombak-ombak yang menghentak menawarkan petualang sejati</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center mt-2">
-                        <div class="col-2">
-                            <img src="src/Rectangle 17.png" alt="" width="55">
-                        </div>
-                        <div class="col-10 mt-3">
-                            <h1 class="title-2">Menggapai Puncak Keindahan</h1>
-                            <p class="text-2">Rasakan sensasi mendaki bukit-bukit hijau yang indah</p>
-                        </div>
-                    </div>
+            <!-- img lg -->
+            <div class="col-5 container d-none d-lg-block">
+                <div class="container position-relative">
+                    <img src="src/Rectangle 5.png" alt="" class="position-absolute">
+                    <img src="src/Rectangle 4.png" alt="" class="position-absolute"
+                        style="margin-left: 70px; margin-top: 50px;">
                 </div>
-                <div class="col-6">
-                    <div class="row mt-1">
+            </div>
+
+            <!-- Paragraph -->
+            <div class="col-12 col-lg-6 container">
+                <h2 class="mini-tumbnail">Tentang Labuan Bajo</h2>
+                <h1 class="title">Labuan Bajo, Sepetak Surga yang Terletak di Indonesia Timur</h1>
+                <p class="text">Labuan Bajo merupakan sebuah surga tersembunyi yang ada di Indonesia bagian timur. Desa
+                    ini
+                    terletak di
+                    Kecamatan Komodo, Kabupaten Manggarai Barat, Provinsi Nusa Tenggara Timur</p>
+                <a href="#adventure-title" class="btn button mt-4 d-none d-lg-block">Adventure</a>
+            </div>
+
+            <!-- img sm -->
+            <img src="src/Group 15.png" alt="" class="container-fluid d-block d-lg-none">
+        </div>
+
+        <!-- content 2 Adventure Labuan Bajo -->
+        <div id="adventure" class="container-fluid py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+
+                        <h2 id="adventure-title" class="mini-tumbnail">Adventure</h2>
+                        <h1 class="title">Temukan Petualangan Yang Seru</h1>
+                        <h3 class="text">keindahan alam menawarkan pengalaman tak terlupakan bagi para penjelajah. </h3>
+
+                        <div id="icon" class="row d-flex align-items-center mt-5 mt-lg-4">
+                            <div class="col-12 col-lg-2">
+                                <img src="src/Rectangle 16.png" alt="" width="55" class="adventure-img">
+                            </div>
+                            <div class="col-12 col-lg-10 mt-3">
+                                <h1 class="title-2 mt-sm-1">Petualangan Menyeberang dengan Kapal</h1>
+                                <p class="text-2">Kamu dapat menjelajahi pulau-pulau terpencil</p>
+                            </div>
+                        </div>
+                        <div id="icon" class="row d-flex align-items-center mt-5 mt-lg-2">
+                            <div class="col-12 col-lg-2">
+                                <img src="src/Rectangle 19.png" alt="" width="55" class="adventure-img">
+                            </div>
+                            <div class="col-12 col-lg-10 mt-3">
+                                <h1 class="title-2">Mengarungi Gelombang Laut</h1>
+                                <p class="text-2">Ombak-ombak yang menghentak menawarkan petualang sejati</p>
+                            </div>
+                        </div>
+                        <div id="icon" class="row d-flex align-items-center mt-5 mt-lg-2">
+                            <div class="col-12 col-lg-2">
+                                <img src="src/Rectangle 17.png" alt="" width="55" class="adventure-img">
+                            </div>
+                            <div class="col-12 col-lg-10 mt-3">
+                                <h1 class="title-2">Menggapai Puncak Keindahan</h1>
+                                <p class="text-2">Rasakan sensasi mendaki bukit-bukit hijau yang indah</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row mt-1 d-none d-lg-flex">
                             <img src="src/Rectangle 8.png" alt="" class="col-6 p-2">
                             <img src="src/Rectangle 9.png" alt="" class="col-6 p-2">
                             <img src="src/Rectangle 10.png" alt="" class="col-6 p-2">
                             <img src="src/Rectangle 11.png" alt="" class="col-6 p-2">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="">
+        <!-- Content 3 Destinasi Labuan Bajo -->
+        <div id="destinasi" class="container-fluid mt-5">
+            <div class="container position-relative">
+                <img src="src/Ellipse 1 sm.png" alt="" class="position-absolute d-none d-lg-block"
+                    style="margin-top: 0px; z-index: -99; margin-left: -250px; width: 500px;">
+                <img src="src/Ellipse 2.png" alt="" class="position-absolute d-none d-lg-block"
+                    style="margin-top: -120px; z-index: -99; margin-left: -190px; width: 500px;">
 
-    </div>
+                <img src="src/Ellipse 1 sm.png" alt="" class="position-absolute d-block d-lg-none"
+                    style="margin-top: -70px; z-index: -99; margin-left: -300px; width: 500px;">
+                <img src="src/Ellipse 2.png" alt="" class="position-absolute d-block d-lg-none"
+                    style="margin-top: -150px; z-index: -99; margin-left: -350px; width: 500px;">
+            </div>
+            <div class="">
+                <div class="text-center">
+                    <h3 class="mini-tumbnail">Destinasi</h3>
+                    <h1 class="title mt-1">Destinasi Populer</h1>
+                    <p class="w-75 mx-auto mt-3 text-center">Destinasi keindahan alam yang memukau labuan bajo. Dari
+                        puncak
+                        gunung
+                        yang menjulang hingga keindahan pemandangan laut yang mengagumkan,</p>
+                </div>
+
+                <div class="mx-lg-5 mt-5">
+                    <div class="row mx-auto container-lg container-sm">
+                        <!-- Card -->
+                        <div class="col-md-6 col-lg-4 col-sm-12 mb-4 mx-sm-auto container-sm">
+                            <div class="card card-height border-0 rounded-4">
+                                <div class="card-bg"
+                                    style="background-image: url('src/rizknas-0ICJEbo0xPw-unsplash\ 1.png');"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Padar Island</h5>
+                                    <p class="card-text">Pulau Padar yang ikonik dengan pulaunya yang berbentuk
+                                        perbukitan
+                                        serta gradasi laut biru di latar belakang </p>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <section class="d-flex card-location align-items-center mt-4">
+                                            <img src="src/location-dot-solid.svg" alt=""
+                                                style="width: 9px; opacity: 0.5; margin-right: 6px;">
+                                            <section class="text-black-50 clamp-text"
+                                                style="margin-top: 2px; font-size: 12px;">
+                                                Padar Island, Komodo, West Manggarai Regency
+                                            </section>
+                                        </section>
+                                        <a href="" class="d-flex align-items-center text-decoration-none mt-4">
+                                            <section class="text-arrow clamp-text">Perbesar</section>
+                                            <svg class="arrow-card" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 448 512">
+                                                <path
+                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                                                    fill="#39A9CB" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-sm-12 mb-4 mx-sm-auto container-sm">
+                            <div class="card card-height border-0 rounded-4">
+                                <div class="card-bg" style="background-image: url('src/komodo\ manggarai\ 1.png');">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Komodo Island</h5>
+                                    <p class="card-text">Pulau Komodo sudah diakui oleh UNESCO sebagai warisan dunia.
+                                        Pulau
+                                        ini terkenal sebagai habitat komodo, kadal terbesar di Bumi</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <section class="d-flex card-location align-items-center mt-4">
+                                            <img src="src/location-dot-solid.svg" alt=""
+                                                style="width: 9px; opacity: 0.5; margin-right: 6px;">
+
+                                            <section class="text-black-50 clamp-text"
+                                                style="margin-top: 2px; font-size: 12px;">
+                                                Komodo Island, Komodo, West Manggarai Regency,</section>
+                                        </section>
+                                        <a href="" class="d-flex align-items-center text-decoration-none mt-4">
+                                            <section class="text-arrow clamp-text">Perbesar</section>
+                                            <svg class="arrow-card" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 448 512">
+                                                <path
+                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                                                    fill="#39A9CB" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-sm-12 mb-4 mx-sm-auto container-sm">
+                            <div class="card card-height border-0 rounded-4">
+                                <div class="card-bg"
+                                    style="background-image: url('src/afif-ramdhasuma-5MlXRvlvRlU-unsplash\ 1.png');">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pink Beach</h5>
+                                    <p class="card-text">Salah satu destinasi yang terkenal di Labuan Bajo adalah pink
+                                        beach. Tentunya keistimewaan dari pantai ini lantaran memiliki pasir warna pink.
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <section class="d-flex card-location align-items-center mt-4">
+                                            <img src="src/location-dot-solid.svg" alt=""
+                                                style="width: 9px; opacity: 0.5; margin-right: 6px;">
+                                            <section class="text-black-50 clamp-text"
+                                                style="margin-top: 2px; font-size: 12px;">
+                                                Labuan Bajo, West Manggarai Regency, East Nusa Tenggara, Indonesia
+                                            </section>
+                                        </section>
+                                        <a href="" class="d-flex align-items-center text-decoration-none mt-4">
+                                            <section class="text-arrow clamp-text">Perbesar</section>
+                                            <svg class="arrow-card" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 448 512">
+                                                <path
+                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                                                    fill="#39A9CB" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-sm-12 mb-4 mx-sm-auto container-sm">
+                            <div class="card card-height border-0 rounded-4">
+                                <div class="card-bg"
+                                    style="background-image: url('src/ash-hayes-EV2tTLVsiKU-unsplash\ 1.png');"></div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Desa Waerebo</h5>
+                                    <p class="card-text">Desa Waerebo sudah diakui oleh UNESCO lantaran kental dengan
+                                        budaya
+                                        dan pemandangan desa ini sangat luar biasa</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <section class="d-flex card-location align-items-center mt-4">
+                                            <img src="src/location-dot-solid.svg" alt=""
+                                                style="width: 9px; opacity: 0.5; margin-right: 6px;">
+
+                                            <section class="text-black-50 clamp-text"
+                                                style="margin-top: 2px; font-size: 12px;">
+                                                Wae Rebo Village, Satar Lenda, Manggarai Regency, East Nusa Tenggara,
+                                                Indonesia</section>
+                                        </section>
+                                        <a href="" class="d-flex align-items-center text-decoration-none mt-4">
+                                            <section class="text-arrow clamp-text">Perbesar</section>
+                                            <svg class="arrow-card" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 448 512">
+                                                <path
+                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                                                    fill="#39A9CB" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-sm-12 mb-4 mx-sm-auto container-sm">
+                            <div class="card card-height border-0 rounded-4">
+                                <div class="card-bg"
+                                    style="background-image: url('src/insan-ramadhan-MrDVzlblRbY-unsplash\ 1.png');">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Pulau Kelor</h5>
+                                    <p class="card-text">Pulau Kelor merupakan salah satu destinasi di Labuan Bajo yang
+                                        sempurna untuk berenang, snorkeling hingga bersantai di pantai. </p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <section class="d-flex card-location align-items-center mt-4">
+                                            <img src="src/location-dot-solid.svg" alt=""
+                                                style="width: 9px; opacity: 0.5; margin-right: 6px;">
+
+                                            <section class="text-black-50 clamp-text"
+                                                style="margin-top: 2px; font-size: 12px;">Labuan Bajo, Kabupaten
+                                                Manggarai
+                                                Barat, Indonesia</section>
+                                        </section>
+                                        <a href="" class="d-flex align-items-center text-decoration-none mt-4">
+                                            <section class="text-arrow calmp-text">Perbesar</section>
+                                            <svg class="arrow-card" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 448 512">
+                                                <path
+                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                                                    fill="#39A9CB" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 col-sm-6 mb-4 mx-sm-auto container-sm">
+                            <div class="card card-height border-0 rounded-4">
+                                <div class="card-bg"
+                                    style="background-image: url('src/celvin-purnama-TaHnmSRFoT4-unsplash\ 1.png');">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Manggarai Barat</h5>
+                                    <p class="card-text">Merupakan salah satu kabupaten di Nusa Tenggara
+                                        Timur. Terdapat banyak pulau di tengah laut dengan
+                                        perairan yang jernih </p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <section class="d-flex card-location align-items-center mt-4">
+                                            <img src="src/location-dot-solid.svg" alt=""
+                                                style="width: 9px; opacity: 0.5; margin-right: 6px;">
+
+                                            <section class="text-black-50 clamp-text"
+                                                style="margin-top: 2px; font-size: 12px;">Kabupaten Manggarai Barat
+                                            </section>
+                                        </section>
+                                        <a href="" class="d-flex align-items-center text-decoration-none mt-4">
+                                            <section class="text-arrow clamp-text">Perbesar</section>
+                                            <svg class="arrow-card" xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 448 512">
+                                                <path
+                                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+                                                    fill="#39A9CB" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img src="src/Ellipse 1 sm.png" alt="" class="position-absolute d-none d-lg-block"
+                            style="margin-top: -250px; z-index: -99; margin-left: 880px; width: 400px;">
+                        <img src="src/Ellipse 5.png" alt="" class="position-absolute d-none d-lg-block"
+                            style="margin-top: -350px; z-index: -99; margin-left: 1000px; width: 400px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Gambar -->
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModalLabel">Gambar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="modalImage" src="" alt="Gambar" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer class="w-100 py-4 flex-shrink-0 justify-content-around">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">Labuan Bajo</h5>
+                    <p class="small text-white">Labuan Bajo merupakan sebuah surga tersembunyi yang ada di Indonesia
+                        bagian timur. Desa ini terletak di Kecamatan Komodo, Kabupaten Manggarai Barat, Provinsi Nusa
+                        Tenggara Timur
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Section</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a class="text-decoration-none" style="color: #39A9CB;" href="#">Home</a></li>
+                        <li><a class="text-decoration-none" style="color: #39A9CB;" href="#">Tentang</a></li>
+                        <li><a class="text-decoration-none" style="color: #39A9CB;" href="#">Adventure</a></li>
+                        <li><a class="text-decoration-none" style="color: #39A9CB;" href="#">Destinasi</a></li>
+                        <li><a class="text-decoration-none" style="color: #39A9CB;" href="#">Profile</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a class="text-decoration-none" style="color: #39A9CB;"
+                                href="https://www.indonesia.travel/id/id/destinasi/bali-nusa-tenggara/labuan-bajo">Tentang
+                                Labuan Bajo</a></li>
+                        <li><a class="text-decoration-none" style="color: #39A9CB;"
+                                href="https://unsplash.com/s/photos/labuan-bajo">Foto-foto Labuan Bajo</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">About Me</h5>
+                    <p class="text-white">Hallo Teman teman, kalian bisa cek profile saya melalui personal akun
+                        instagram dan github saya yang tertera di bawah</p>
+                    <div class="d-flex align-items-center">
+                        <a href="" style="margin-right: 16px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.6em"
+                                viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z;" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.6em"
+                                viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                <style>
+                                    svg {
+                                        fill: #ffffff
+                                    }
+                                </style>
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-
-    <!-- Section 1 Tentang -->
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br>
     <!-- Script -->
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

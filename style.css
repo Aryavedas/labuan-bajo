@@ -1,30 +1,37 @@
 html,
 body {
+    scroll-behavior: smooth;
     overflow-x: hidden;
-    /* position: relative; */
+    position: relative;
     font-family: 'Poppins', sans-serif;
+    z-index: 1;
 }
 
+/* General Styling */
 ::selection {
-    background-color: #FFEDA3; /* Warna latar belakang saat dipilih */
-    color: #232323; /* Warna teks saat dipilih */
+    background-color: #FFEDA3;
+    color: #232323;
 }
 
+.clamp-text {
+    max-height: 3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /* Number of lines to show */
+    -webkit-box-orient: vertical;
+}
 
-/* Custom title text */
-/* mini tumbnail */
 .mini-tumbnail {
-    padding: 5px 20px;
+    padding: 7px 10px;
     display: inline-block;
     border-radius: 6px;
-    background: rgba(255, 237, 163, 0.30);
-    color: #FFEDA3;
-    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.27);
-    font-size: 16px;
-    font-style: normal;
+    background: #FFEDA3;
+    color: rgb(0, 0, 0, 0.8);
+    font-size: 13px;
     font-weight: 600;
-    line-height: normal;
-    letter-spacing: 1.44px;
+    letter-spacing: 0.5px;
 }
 
 .title {
@@ -42,8 +49,15 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
-    /* 166.667% */
     letter-spacing: 0.96px;
+}
+
+.text-center {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
 }
 
 .button {
@@ -65,33 +79,39 @@ body {
     color: #232323;
 }
 
-/* Media query untuk breakpoint Desktop*/
+/* general Media query untuk breakpoint Desktop*/
 @media (min-width: 768px) {
+    #hide-nav {
+        transition: top 0.3s;
+    }
+
     .nav-lg {
-        background: rgba(35, 35, 35, 0.3);
+        /* background: rgba(35, 35, 35, 1); */
+        background-color: #FFF;
         transition: background-color 0.3s;
         color: white;
-        margin-top: 10px;
-        border-radius: 10px;
-        height: 60px;
+        /* margin-top: 10px; */
+        /* border-radius: 10px; */
+        height: 70px;
     }
 
     .nav-lg .nav-logo {
         font-family: 'Lily Script One';
         font-size: 30px;
         font-weight: 400;
-        color: white;
-        margin-top: -17px;
+        color: black;
+        margin-top: -7px;
     }
 
     .nav-lg .nav-list {
-        margin-top: 3px;
+        margin-top: 8px;
         font-size: 16px;
         font-weight: 600;
+        color: black;
     }
 
     .nav-lg .nav-list a:hover {
-        color: #FFEDA3;
+        color: #39A9CB;
     }
 
     /* Menyembunyikan navbar tablet pada breakpoint Desktop */
@@ -99,12 +119,33 @@ body {
         display: none;
     }
 
+    .title-2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .text-2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 300;
+    }
+
     #carouselExampleCaptions .carousel-inner .carousel-item img {
         height: 630px;
     }
+
+    #adventure {
+        background-color: rgba(57, 169, 203, 0.07);
+        margin-top: 150px;
+    }
 }
 
-/* Media query untuk breakpoint tablet dan handphone*/
+/* general Media query untuk breakpoint tablet dan handphone*/
 @media (max-width: 768px) {
 
     /* Menyembunyikan navbar utama pada breakpoint tablet dan handphone*/
@@ -122,6 +163,10 @@ body {
         transition: background-color 0.3s;
         color: white;
         transition: background-color 0.3s;
+        box-shadow: #000 5px;
+    }
+    .custom-shadow{
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
     }
 
     .nav-sm .nav-logo {
@@ -154,23 +199,22 @@ body {
     }
 
     .mini-tumbnail {
-        color: #FFEDA3;
+        color: rgb(0, 0, 0, 0.8);
         text-align: center;
-        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.27);
         font-family: Poppins;
-        font-size: 15px;
+        font-size: 10px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        letter-spacing: 0.84px;
+        letter-spacing: 0.4px;
         display: flex;
-        width: 80%;
+        width: fit-content;
         justify-content: center;
         align-items: center;
         /* Tambahkan margin jika diperlukan */
         margin: 0 auto;
+        margin-bottom: 1px;
     }
-
 
     .title {
         color: #000;
@@ -196,36 +240,123 @@ body {
         letter-spacing: 0.48px;
     }
 
+    .title-2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    .text-2 {
+        color: #000;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .text-center {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    #icon{
+        margin-left: 10px;
+    }
+
     .button:hover {
         background: #FFEDA3;
         color: #232323;
     }
+
+    #adventure {
+        background-color: rgba(70, 169, 203, 0.1);
+        margin-top: 100px;
+    }
+
+    #adventure .adventure-img {
+        width: 20%;
+    }
+
+    .popup-image img{
+        width: 80%;
+    }
 }
 
-/* Carousel */
+/* Carousel style */
 #carousel-sm {
     margin-top: 80px;
 }
 
-/* Content 1 */
+/* Content 1 Style */
 
-/* Content 2 */
-#content2 {
-    background-color: rgba(57, 169, 203, 0.07);
+/* Content 2 Style */
+
+/* Content 4 Style */
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.title-2 {
-    color: #000;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
+.card-height {
+    height: 100%;
 }
 
-.text-2 {
+.card-bg {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover .card-title {
+    color: #39A9CB;
+    transition: 0.3s;
+}
+
+.card-title {
     color: #000;
-    font-family: Poppins;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 300;
+    font-size: 26px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card-text {
+    margin-top: 15px;
+}
+
+.text-arrow {
+    opacity: 0;
+    transition: 0.3s;
+    font-size: 12px;
+}
+
+.card:hover .text-arrow {
+    opacity: 100;
+    color: #39A9CB;
+    transition: 0.3s;
+}
+
+.arrow-card {
+    /* display: none; */
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.card:hover .arrow-card {
+    opacity: 100;
+    display: block;
+    transition: 0.3s;
+    transform: translate(5px);
+}
+
+/* Footer */
+footer {
+    background-color: #232323;
+    margin-top: 60px;
 }

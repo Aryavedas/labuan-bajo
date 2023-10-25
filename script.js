@@ -29,7 +29,7 @@ navHamburger.addEventListener("click", function () {
         navList.classList.remove("d-none");
         navSm.classList.remove("bg-transparent");
         navSm.classList.add("custom-shadow");
-        htmlElement.style.overflowY = 'hidden';
+        // htmlElement.style.overflowY = 'hidden';
     } else {
         navList.classList.add("d-none");
         document.body.classList.remove("stop-scrolling");
@@ -76,7 +76,54 @@ links.forEach(link => {
     });
 });
 
-const coba = document.querySelector(".modal-dialog span");
-coba.addEventListener("click", function() {
-    console.log('jancok');
+// Popup img JS
+const popupImg = document.getElementById("popup-img");
+const closeImgPopup = document.getElementById("close-img-popup");
+// Close
+closeImgPopup.addEventListener("click", () => {
+    if (popupImg.classList.contains("d-grid")) {
+        popupImg.classList.add("d-none");
+        popupImg.classList.remove("d-grid");
+    }
 });
+// Open
+document.querySelectorAll(".card-destinasi").forEach(image => {
+    image.addEventListener("click", function () {
+        if (popupImg.classList.contains("d-grid")) {
+            popupImg.classList.add("d-none");
+            popupImg.classList.remove("d-grid");
+        } else {
+            // Menggunakan `this` untuk merujuk pada elemen card yang diklik
+            const card = this;
+
+            // Mencari elemen .card-bg dalam card yang diklik
+            const cardBg = card.querySelector(".card-bg");
+
+            // Mengambil URL gambar dari atribut data-image-url
+            const imageUrl = cardBg.getAttribute("data-image-url");
+            console.log(imageUrl);
+
+            // Setel gambar pada popup dengan URL yang diambil
+            const popupImage = popupImg.querySelector("img");
+            popupImage.src = imageUrl;
+
+            popupImg.classList.add("d-grid");
+            popupImg.classList.remove("d-none");
+        }
+    });
+});
+
+const btn = document.getElementById("button");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 2500) {
+        btn.style.opacity = 1;
+        btn.style.pointerEvents = "auto";
+    } else {
+        btn.style.opacity = 0;
+        btn.style.pointerEvents = "none";
+    }
+});
+
+
+

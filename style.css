@@ -23,6 +23,37 @@ body {
     -webkit-box-orient: vertical;
 }
 
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#button::after {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
 .mini-tumbnail {
     padding: 7px 10px;
     display: inline-block;
@@ -32,11 +63,12 @@ body {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: 0.5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .title {
     color: #000;
-    font-size: 40px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: 63px;
@@ -48,7 +80,7 @@ body {
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
-    line-height: 40px;
+    line-height: 38px;
     letter-spacing: 0.96px;
 }
 
@@ -56,7 +88,7 @@ body {
     color: #000;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 30px;
 }
 
@@ -80,7 +112,7 @@ body {
 }
 
 /* general Media query untuk breakpoint Desktop*/
-@media (min-width: 768px) {
+@media (min-width: 991px) {
     #hide-nav {
         transition: top 0.3s;
     }
@@ -140,13 +172,18 @@ body {
     }
 
     #adventure {
-        background-color: rgba(57, 169, 203, 0.07);
-        margin-top: 150px;
+        margin-top: 70px;
+    }
+
+    #popup-img img {
+        width: 70%;
+        border-radius: 10px;
+        align-self: center;
     }
 }
 
-/* general Media query untuk breakpoint tablet dan handphone*/
-@media (max-width: 768px) {
+/* general Media query untuk breakpoint handphone*/
+@media (max-width: 992px) {
 
     /* Menyembunyikan navbar utama pada breakpoint tablet dan handphone*/
     .nav-lg {
@@ -165,8 +202,10 @@ body {
         transition: background-color 0.3s;
         box-shadow: #000 5px;
     }
-    .custom-shadow{
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
+
+    .custom-shadow {
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        /* Adjust the values as needed */
     }
 
     .nav-sm .nav-logo {
@@ -177,7 +216,7 @@ body {
     }
 
     .nav-sm .nav-list {
-        margin-top: 25px;
+        margin-top: 2px;
     }
 
     .nav-sm .nav-list a {
@@ -243,7 +282,7 @@ body {
     .title-2 {
         color: #000;
         font-family: Poppins;
-        font-size: 22px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
     }
@@ -251,7 +290,7 @@ body {
     .text-2 {
         color: #000;
         font-family: Poppins;
-        font-size: 18px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
     }
@@ -264,7 +303,7 @@ body {
         line-height: normal;
     }
 
-    #icon{
+    #icon {
         margin-left: 10px;
     }
 
@@ -278,12 +317,40 @@ body {
         margin-top: 100px;
     }
 
-    #adventure .adventure-img {
-        width: 20%;
+    .popup-image img {
+        width: 80%;
     }
 
-    .popup-image img{
-        width: 80%;
+    #popup-img img {
+        width: 98%;
+        border-radius: 10px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 397px) {
+    #tips .card-tips-item {
+        flex-direction: column;
+    }
+
+    #tips .card-tips-item section {
+        margin-top: 15px;
+    }
+
+    #tips .card-tips-item .col-4 {
+        height: 160px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 397px) {
+    #tips .card-tips-item .col-4 {
+        height: 140px;
+        width: 140px;
+    }
+
+    #tips .card-tips-item section {
+        margin-top: 15px;
     }
 }
 
@@ -291,10 +358,6 @@ body {
 #carousel-sm {
     margin-top: 80px;
 }
-
-/* Content 1 Style */
-
-/* Content 2 Style */
 
 /* Content 4 Style */
 .card {
@@ -354,6 +417,34 @@ body {
     transition: 0.3s;
     transform: translate(5px);
 }
+
+#tips {
+    /* background-color: rgba(112, 209, 239, 0.16); */
+}
+
+#popup-img {
+    background-color: rgba(0, 0, 0, 0.7);
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#popup-img span {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    /* width: 400px; */
+}
+
+
+/* content 4 */
+/* #kultur{
+    background-color: rgba(70, 169, 203, 0.1);
+} */
 
 /* Footer */
 footer {
